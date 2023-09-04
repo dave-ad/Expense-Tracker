@@ -8,6 +8,7 @@
     <!-- Syncfusion ASP.NET Core controls styles -->
     @* <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/22.2.5/material.css" /> *@
     <link href="https://cdn.syncfusion.com/ej2/22.2.5/bootstrap5-dark.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Expense_Tracker.styles.css" asp-append-version="true" />
     <!-- Syncfusion ASP.NET Core controls scripts -->
@@ -35,17 +36,22 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
         <main role="main" class="pb-3">
             @RenderBody()
-        </main>
+        </main>                
+            </div>
+        </div>
     </div>
 
-    <footer class="border-top footer text-muted">
+@*     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - Expense_Tracker - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2023 - Expense Tracker - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-    </footer>
+    </footer> *@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
