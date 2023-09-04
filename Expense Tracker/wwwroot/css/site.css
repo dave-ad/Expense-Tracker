@@ -19,4 +19,32 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color: #12161d;
+  color: #ffffff;
+}
+
+.e-bigger {
+    font-size: x-large;
+}
+
+/*Radio button Group*/
+.e-btn-group.custom-rbt-group {
+    width:100%;
+}
+
+.e-btn-group.custom-rbt-group .e-btn {
+    width: 50%;
+}
+
+.custom-rbt-group label.e-btn {
+    box-shadow: none !important;
+    border: 1px solid #ffffff;
+    background-color: rgb(34, 43, 51);
+    color: #ffffff;
+}
+
+.e-btn-group.custom-rbt-group input:checked + label.e-btn {
+    background-color: #ffffff;
+    color: #212b36;
+    border: 1px solid #ffffff;
 }
