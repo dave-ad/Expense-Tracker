@@ -9,6 +9,7 @@ namespace Expense_Tracker.Models
         public int CategoryId { get; set; }
 
         [Column(TypeName = "nvarchar(50)")] // For string properties, it is necessary to specify the necessary SQL server datatype
+        [Required(ErrorMessage = "Title is required.")]
         public string Title { get; set; }
 
         [Column(TypeName = "nvarchar(5)")]

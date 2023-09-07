@@ -2,9 +2,10 @@
 
 @{
     ViewData["PageTitle"] = "Categories";
-    ViewData["PageActiontext"] = "+New Category";
+    ViewData["PageActionText"] = "+ New Category";
     ViewData["PageActionUrl"] = "/Category/AddOrEdit";
 }
+
 
 <div class="row">
     <div class="col-md-7">
@@ -18,7 +19,7 @@
         </ejs-grid>
     </div>
     <div class="col-md-5">
-        <div class="widget h-100 d-flex justify-content-center align-items-center" style="background-color: #212b36">
+        <div class="widget h-100 d-flex justify-content-center align-items-center">
             <i class="fa-solid fa-shapes fa-2xl"></i>
         </div>
     </div>
@@ -39,7 +40,7 @@
         </a>
         <form action="/Category/Delete/${CategoryId}" method="post">
             @Html.AntiForgeryToken()
-            <button type="submit" class="btn btn-sm btn-link no-a-decoration" onclick="return confirm(&quote;Are you sure you want to delete the record?&quote;)">
+            <button type="submit" class="btn btn-sm btn-link no-a-decoration" onclick="return confirm(&quot;Are you sure you want to delete the record?&quot;)">
                 <i class="fa-solid fa-trash-can fa-lg text-danger"></i>
             </button>
         </form>
