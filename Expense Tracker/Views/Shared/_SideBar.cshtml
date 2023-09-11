@@ -4,74 +4,59 @@
 @{
     List<Object> menuItems = new List<Object>();
 
-    menuItems.Add(
-    new
+    menuItems.Add(new
     {
         text = "General",
         separator = true,
-    }
-        );
-    menuItems.Add(
-    new
+    });
+    menuItems.Add(new
     {
         text = "Dashboard",
         url = "/",
         iconCss = "fa-solid fa-box",
-    }
-        );
-    menuItems.Add(
-        new
-        {
-            text = "Categories",
-            url = "/Category",
-            iconCss = "fa-solid fa-folder-closed",
-        }
-    );
-    menuItems.Add(
-        new
-        {
-            text = "Transactions",
-            url = "/Transaction",
-            iconCss = "fa-solid fa-arrow-right-arrow-left",
-        }
-    );
-    menuItems.Add(
-    new
+    });
+    menuItems.Add(new
+    {
+        text = "Categories",
+        url = "/Category",
+        iconCss = "fa-solid fa-folder-closed",
+    });
+    menuItems.Add(new
+    {
+        text = "Transactions",
+        url = "/Transaction",
+        iconCss = "fa-solid fa-arrow-right-arrow-left",
+    });
+    menuItems.Add(new
     {
         text = "Extras",
         separator = true,
-    }
-        );
-    menuItems.Add(
-       new
-       {
-           text = "Reports",
-           url = "#",
-           iconCss = "fa-solid fa-chart-simple",
-       }
-           );
-    menuItems.Add(
-        new
-        {
-            text = "Settings",
-            url = "#",
-            iconCss = "fa-solid fa-gear",
-        }
-    );
+    });
+    menuItems.Add(new
+    {
+        text = "Reports",
+        url = "#",
+        iconCss = "fa-solid fa-chart-simple",
+    });
+    menuItems.Add(new
+    {
+        text = "Settings",
+        url = "#",
+        iconCss = "fa-solid fa-gear",
+    });
 }
 
 
 <!-- sidebar element declaration -->
-<ejs-sidebar id="sidebar" width="290px" enableDock>
+<ejs-sidebar id="sidebar" width="290px" enableDock dockSize="100px" target=".dock-target" enableGestures="false">
     <e-content-template>
         <div class="logo-wrapper">
             <div class="app-logo">
                 <img src="~/logo.png" />
             </div>
             <div class="w-100"></div>
-            <i id=sidebar-toggler class="fa-solid fa-angles-left"></i>
+            <i id="sidebar-toggler" class="fa-solid"></i>
         </div>
-
 
         <div class="profile-wrapper">
             <img class="profile-pic" src="~/profile.jpg" />
@@ -80,15 +65,15 @@
                 <span class="text-muted">John Doe</span>
             </div>
         </div>
-        <ejs-menu id="menu" orientation="Vertical" items="menuItems"></ejs-menu>
+        <ejs-menu id="menu" orientation="Vertical" items="menuItems" hamburgerMode></ejs-menu>
     </e-content-template>
 </ejs-sidebar>
 
 <script>
-    document.addEventListener('DOmContentLoaded', function () {
-        dockBar = document.getElementbyId('sidebar').ej2_instances[0];
-        document.getElementById('sidebar-toggler').onclick = funtion(){
-            dockBar.toogle();
-        }
+    document.addEventListener('DOMContentLoaded', function (){
+        dockBar = document.getElementById('sidebar').ej2_instances[0];
+        document.getElementById('sidebar-toggler').onclick = function (){
+            dockBar.toggle();
+        };
     });
 </script>

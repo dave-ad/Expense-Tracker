@@ -111,6 +111,5 @@ namespace Expense_Tracker.Controllers
         public string day;
         public int income;
         public int expense;
-
     }
 }
