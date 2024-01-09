@@ -1,9 +1,13 @@
-# Expense-Tracker-App-in-Asp.Net-Core-MVC
-This is an Expense Tracker App in Asp.Net Core MVC using SyncFusion Components.
+# Expense Tracker App
+This is an Expense Tracker App in Asp.Net Web Api and Asp.Net Core MVC using SyncFusion Components.
 
 This is a complete Asp.Net Core application to demonstrate the building an enterprise application from scratch.
 
-Discussed Points :
+Discussed Points on Web API:
+Implemented Http Methods of Category & Transaction
+Status Code Documentation
+
+Discussed Points on MVC:
 Implemented CRUD Operation of Category & Transaction
 Grid with Paging & Sorting
 Dashboard with Chart Elements
