@@ -1,9 +1,8 @@
-namespace Expense_Tracker_Api.Models
-{
-    public class ErrorViewModel
-    {
-        public string? RequestId { get; set; }
+namespace Expense_Tracker_Api.Models;
 
-        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
-    }
+public class ErrorViewModel
+{
+    public string? RequestId { get; set; }
+
+    public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 }
