@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Expense Tracker", "Expense 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Expense Tracker Api", "Expense Tracker Api\Expense Tracker Api.csproj", "{BF5ACC6B-5834-42BE-A067-72F3D90FA49D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A5981E1A-AD12-4387-A3A4-811700A5C5DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{CA04B1E9-1A45-4F5B-A652-05E43E5B4C4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +28,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B2EC6D4B-0AF3-42AD-8661-23EE160F078E} = {A5981E1A-AD12-4387-A3A4-811700A5C5DC}
+		{BF5ACC6B-5834-42BE-A067-72F3D90FA49D} = {A5981E1A-AD12-4387-A3A4-811700A5C5DC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {74A2FF14-199D-4B57-A572-83BBF42BA661}
